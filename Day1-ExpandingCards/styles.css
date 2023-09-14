@@ -48,7 +48,7 @@ body {
   position: relative;
   color: #fff;
   cursor: pointer;
-  transition: flex 0.7s ease-in-out;
+  transition: flex 0.5s ease-in-out;
   margin: 2px;
   overflow: hidden;
 }  
@@ -65,7 +65,7 @@ body {
   text-align: center;
   backdrop-filter: blur(2px);
   color: #fff;
-  transition: bottom 1s ease-in-out, opacity 1s ease-in-out;
+  transition: bottom 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
 
 .image-box.active h3 {
