@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Libre+Baskerville:ital@0;1&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #222;
+  font-family: Lato, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 50px;
+  transform-origin: top left;
+  transition: 0.5s linear;
+}
+
+.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #ff9779;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button.close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav .circle{
+  transform: rotate(-20deg);
+}
